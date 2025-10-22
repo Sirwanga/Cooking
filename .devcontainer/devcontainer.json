@@ -1,0 +1,15 @@
+{
+  "name": "Daml Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "postCreateCommand": "daml version || true",
+  "remoteUser": "vscode"
+}
